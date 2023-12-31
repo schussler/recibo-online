@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cupom Não Fiscal</title>
+  <link rel="stylesheet" href="css/recibo.css">
+  <link rel="stylesheet" href="css/formulario.css">
+
+  <style>
+    #cupom {
+      display: none;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="formulario" id="divFormulario">
+    <!-- AREA CLIENTE -->
+    <div class="cliente">
+      <label>TUTOR</label>
+      <input type="text" id="inputCliente" placeholder="Digite o nome do cliente" />
+    </div>
+    <!-- AREA PRODUTO -->
+    <div class="produto">
+      <input class="w-20p" type="number" id="inputQuantidade" placeholder="QTD" />
+      <input class="w-50p" type="text" id="inputProduto" placeholder="PRODUTO" />
+      <input class="w-20p" type="number" id="inputValorUnitario" placeholder="UNT" />
+    </div>
+    <!-- BOTAO ADIÇÃO PRODUTO  -->
+    <div class="adicionarProduto">
+      <button class="button" onclick="adicionarProduto()">+</button>
+    </div>
+
+    <!-- AREA TOTAL -->
+    <div class="previa"></div>
+    <div class="resultado">
+      <div class="desconto w-50p">
+        <input class="input" type="text" id="inputDesconto" placeholder="DIGITE O DESCONTO EM REAIS" />
+      </div>
+      <div class="total w-50p">
+        <button class="button" onclick="gerarRecibo()">GERAR RECIBO</button>
+      </div>
+    </div>
+    <!-- 
+    <div class="configs">
+      <button class="button dbtn" onclick="apagarUltimoItem()">APAGAR ITEM</button>
+      <button class="button rbtn" onclick="resetarRecibo()">RESETAR RECIBO</button>
+    </div> -->
+
+  </div>
+  <!-- AREA GERAR -->
+
+  <div class="cupom" id="cupom">
+    <br>
+    <div class="titulo">STUDIO PET GM</div>
+    <div class="dados_loja">******** COMANDA DE SERVIÇO ********</div>
+
+    <div class="dados_loja">av.Jose davi - 626 - cidade beira mar - RO <br>(22) 99848-6513 / (22) 99931-5339</div>
+    <div class="data"></div>
+
+    <hr>
+    <div class="dados_cliente" id="dadosCliente" class="oculto">
+      <!-- O nome do tutor será exibido aqui -->
+    </div>
+    <hr>
+    <table id="tabelaProdutos" class="tabela">
+      <thead>
+        <tr>
+          <th class="w-8p">QTD</th>
+          <th class="w-40p">SERVIÇO</th>
+          <th class="w-15p">UNT</th>
+          <th class="w-15p">TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Linhas de produtos serão adicionadas aqui dinamicamente -->
+      </tbody>
+    </table>
+    <hr>
+    <div class="total" id="totalDesconto" class="oculto">Desconto: R$ 00,00</div>
+    <div class="total" id="totalFinal" class="oculto">Total: R$ 135,00</div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Consolas:wght@400&family=Monospace:wght@400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cupom {
+  font-family: Consolas, monospace;
+  text-transform: uppercase;
+  width: 58mm;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.dados_loja {
+  font-weight: bold;
+  font-size: 9px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.dados_cliente {
+  font-size: 15px;
+  padding-bottom: 2px;
+  margin-left: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.dados_cliente P {
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.data {
+  font-size: 11px;
+  text-align: center;
+  padding: 3px;
+  font-weight: bold;
+}
+.tabela {
+  width: 58mm;
+  border-collapse: collapse;
+  padding: 5px;
+  table-layout: fixed;
+}
+
+.tabela th {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.tabela td {
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 3px;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .cupom {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.total {
+  text-align: center;
+  font-weight: bold;
+}
+
+.bd-b {
+  border: 1px solid black;
+}
+
+.bd-r {
+  border: 1px solid red;
+}
+
+.bd-g {
+  border: 1px solid green;
+}
+
+.w-8p {
+  width: 8%;
+}
+
+.w-40p {
+  width: 40%;
+}
+
+.w-15p {
+  width: 15%;
+}

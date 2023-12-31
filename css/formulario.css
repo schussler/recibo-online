@@ -1,0 +1,116 @@
+.button {
+  padding: 5px 15px 5px 15px;
+  background-color: #209cee;
+  border-radius: 3px;
+  border: none;
+  font-weight: 500;
+  color: white;
+}
+
+.button:hover {
+  background-color: #0b84d4;
+  cursor: pointer;
+}
+
+.w-20p {
+  width: 10%;
+}
+
+.w-50p {
+  width: 80%;
+}
+.rbtn {
+  background-color: #fc5412;
+}
+.rbtn:hover {
+  background-color: #c23c08;
+}
+.dbtn {
+  background-color: #ed0505;
+}
+.dbtn:hover {
+  background-color: #ab0303;
+}
+
+.formulario {
+  width: 90%;
+  margin: auto auto;
+  max-width: 600px;
+  background-color: bisque;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.cliente {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.cliente label,
+.cliente input {
+  padding: 3px;
+  margin: 2px;
+  text-align: center;
+}
+
+.produto {
+  display: flex;
+  padding: 3px;
+  margin-top: 5px;
+}
+
+.produto input {
+  height: 5px;
+  padding: 3px;
+  font-size: 7px;
+  text-align: center;
+}
+
+.adicionarProduto {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.previa {
+  text-align: center;
+  font-size: 5px;
+}
+.resultado {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+}
+
+.resultado input {
+  height: 10px;
+  width: 100px;
+  text-align: center;
+  font-size: 6px;
+  margin-bottom: 5px;
+}
+
+.total {
+  margin: 3px;
+  padding: 5px;
+}
+
+.configs {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.configs button {
+  height: 40px;
+  font-size: 7px;
+  width: 40px;
+  margin: 6px;
+  padding: 0px;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
